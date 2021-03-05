@@ -1,7 +1,7 @@
 # DaVinci-Resolve-LUT-Explorer
 
 ## Description
-A quicker way to preview LUTs on your footage
+Another way to preview LUTs on your footage
 
 ## Needs Davinci Resolve 17
 
