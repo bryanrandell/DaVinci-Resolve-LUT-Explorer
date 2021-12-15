@@ -16,3 +16,5 @@ Then finally restart Davinci Resolve if it was already opened.
 
 ## Usage 
 In Davinci Resolve go to Workspace > Workflow Integration click on ui_LUT_Explorer_utility it will open a window.
+Does not support 1D LUTs.
+
