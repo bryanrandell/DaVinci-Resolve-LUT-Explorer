@@ -108,8 +108,8 @@ explication_text = "Left click on the LUT from the list above\nto add it on your
 main_window = dispatcher.AddWindow({'ID': winID, 'Geometry': [100, 100, 1000, 500], 'WindowTitle': "DaVinci Resolve LUT Explorer Utility", },
     ui.VGroup([
       ui.Label({'Text': header, 'Weight': 0.2, 'Font': ui.Font({'Family': "Times New Roman"}), "Alignment" : { "AlignHCenter" : True , "AlignTop" : True }}),
-    ui.HGroup({ 'Weight': 1 }, [
-      ui.LineEdit({'ID': line_edit_searchID, 'Text': '', 'PlaceholderText': 'Filter LUTs by Name', }),
+    ui.HGroup({ 'Weight': 0.1 }, [
+      ui.LineEdit({'ID': line_edit_searchID, 'Text': '', 'PlaceholderText': 'Filter LUTs by Name', 'Events': {'EditingFinished': True}}),
       ui.Button({'ID': button_refreshID, 'Text': 'Refresh List'},)
       ]),
     ui.HGroup({ 'Weight': 0.1 }, [
@@ -198,7 +198,7 @@ def OnClickExplorer(ev):
 
 # assign event handlers
 main_window.On[winID].Close = OnClose
-main_window.On[line_edit_searchID].TextChanged = OnTextChanged
+main_window.On[line_edit_searchID].EditingFinished = OnTextChanged
 main_window.On[tree_LutID].ItemClicked = OnClickTree
 main_window.On[button_refreshID].Clicked = OnClickRefresh
 main_window.On[button_explorerID].Clicked = OnClickExplorer
