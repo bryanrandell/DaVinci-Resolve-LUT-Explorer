@@ -2,7 +2,7 @@
 
 ## Description
 Another way to preview LUTs on your footage.\
-With icon corresponding to the timeline active clip 
+With icon corresponding to the timeline active clip thumbnail. 
 
 ## Needs Davinci Resolve 17
 
