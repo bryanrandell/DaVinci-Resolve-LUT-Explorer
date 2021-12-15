@@ -66,8 +66,9 @@ def list_lut_row_creation_filtered(lut_path, tree_item, tree_LutID, filter_strin
                     # if file.lower().find(filter_string.lower()) != -1:
                     #     print(item_num)
 
-
-
+# the method .GetCurrentClipThumbnailImage() only works in the color page
+if resolve.GetCurrentPage() != 'color':
+    resolve.OpenPage('color')
 project_manager = resolve.GetProjectManager()
 current_project = project_manager.GetCurrentProject()
 print(current_project.GetName())
