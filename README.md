@@ -4,6 +4,8 @@
 Another way to preview LUTs on your footage.\
 With icon corresponding to the timeline active clip thumbnail. 
 
+![Screenshot](./screenshot/Screenshot.png)
+
 ## Needs Davinci Resolve 17
 
 ## Installation
